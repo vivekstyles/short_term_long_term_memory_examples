@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-memory-examples"
+version = "0.1.0"
+description = "Comprehensive examples illustrating Short-Term and Long-Term Memory in Agentic AI Systems"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "rich>=13.0",
+    "pytest>=8.0",
+    "python-dotenv>=1.0",
+    "numpy>=1.24"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
